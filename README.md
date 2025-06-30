@@ -7,7 +7,7 @@
 
  GitHub Repository
 
-[GitHub Repo] (https://github.com/your-username/your-repo-name)
+[GitHub Repo] (https://github.com/amina120/landing-page)
 
  Screenshot
 <img width="959" alt="image" src="https://github.com/user-attachments/assets/24fc6b46-7ad9-4b16-9140-07eb331b04f4" />
