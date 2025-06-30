@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
+        url("https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg");
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    nav {
+      width: 100%;
+      height: 80px;
+      background-color: rgb(128, 199, 209);
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      letter-spacing: 2px;
+      font-size: 1.5rem;
+      font-family: fantasy;
+    }
+
+    .menu,
+    .login {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      align-items: center;
+      
+     
+ 
+    }
+
+    .menu a,
+    .login a,
+    .h-txt a {
+      text-decoration: none;
+      padding: 8px 20px;
+      color: black;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 8px;
+      transition: 0.3s;
+     
+    }
+
+    .login a,
+    .h-txt a {
+      background-color: rgb(230, 230, 227);
+    }
+
+    .login a:hover,
+    .h-txt a:hover {
+      background: transparent;
+      border: 1px solid rgb(55, 168, 199);
+    }
+
+    .h-txt {
+      max-width: 90%;
+      width: 600px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      background-color: rgba(128, 199, 209, 0.9);
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .h-txt h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .h-txt h4 {
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+        align-items: flex-start;
+      }
+
+      .menu,
+      .login {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+        margin-top: 10px;
+       
+      }
+
+      .h-txt {
+        padding: 15px;
+        font-size: 0.9rem;
+      }
+
+      .h-txt h2 {
+        font-size: 1.4rem;
+      }
+
+      .h-txt h4 {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .h-txt {
+        width: 90%;
+      }
+
+      .h-txt h2 {
+        font-size: 1.2rem;
+      }
+
+      .h-txt h4 {
+        font-size: 0.85rem;
+      }
+
+      .menu a,
+      .login a,
+      .h-txt a {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TraVel</div>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Hotels</a>
+        <a href="#">Flights</a>
+        <a href="#">Bookings</a>
+      </div>
+      <div class="login">
+        <a href="#">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </nav>
+
+    <section class="h-txt">
+      <h2>BEST DESTINATIONS AROUND WORLD</h2>
+      <h4>Enjoy, Travel And Live a New Life.</h4>
+      <a href="#">Find out more</a>
+    </section>
+  </header>
+</body>
+</html>
